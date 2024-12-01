@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #0f0f0f;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  background-color: #ffffff;
+  height: 1px;
+  width: 100%;
+  margin: 2px 0;
+}
+.youtube_logo {
+  width: 120px;
+  height: 34px;
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./assets/images/youtube\ logo.png");
+}
+
+.upload_video_logo,
+.notification_logo {
+  color: white;
+  fill: white;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.channel_logo {
+  background-image: url("assets/images/avatar.jpg");
+  width: 32px;
+  height: 32px;
+  border-radius: 55%;
+  margin-left: 15px;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 340px;
+  border: 1px solid #303030;
+  border-radius: 22px;
+}
+.search_container .search_input .input {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+.search_container .search_input .input::placeholder {
+  color: #888;
+}
+.search_container .search_input {
+  padding: 0 12px;
+}
+.btn_search,
+.mic {
+  background-color: #222222;
+}
+.btn_search {
+  border: 0px;
+  height: 100%;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  width: 64px;
+  color: white;
+  cursor: pointer;
+}
+.btn_search svg {
+  width: 24px;
+  height: 24px;
+}
+.mic svg {
+  width: 18px;
+  height: 18px;
+}
+.mic {
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 55%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
