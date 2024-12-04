@@ -7,22 +7,108 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="left">
-        <div class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-        <div class="youtube_logo"></div>
-      </div>
-
-      <div class="center">
-        <div class="search_container">
-          <div class="search_input">
-            <input class="input" placeholder="Search" />
+    <div class="container">
+      <nav class="navbar">
+        <div class="left">
+          <div class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
-          <button class="btn_search">
+          <div class="youtube_logo"></div>
+        </div>
+
+        <div class="center">
+          <div class="search_container">
+            <div class="search_input">
+              <input class="input" placeholder="Search" />
+            </div>
+            <button class="btn_search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                focusable="false"
+                aria-hidden="true"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="mic">
+            <svg
+              viewBox="-5 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              fill="#ffffff"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>microphone</title>
+                <desc>Created with Sketch Beta.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  sketch:type="MSPage"
+                >
+                  <g
+                    id="Icon-Set-Filled"
+                    sketch:type="MSLayerGroup"
+                    transform="translate(-107.000000, -309.000000)"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M118,333 C121.866,333 125,329.866 125,326 L125,316 C125,312.134 121.866,309 118,309 C114.134,309 111,312.134 111,316 L111,326 C111,329.866 114.134,333 118,333 L118,333 Z M129,328 L127,328 C126.089,332.007 122.282,335 118,335 C113.718,335 109.911,332.007 109,328 L107,328 C107.883,332.799 112.063,336.51 117,336.955 L117,339 L116,339 C115.448,339 115,339.448 115,340 C115,340.553 115.448,341 116,341 L120,341 C120.552,341 121,340.553 121,340 C121,339.448 120.552,339 120,339 L119,339 L119,336.955 C123.937,336.51 128.117,332.799 129,328 L129,328 Z"
+                      id="microphone"
+                      sketch:type="MSShapeGroup"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="upload_video_logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              style="
+                pointer-events: none;
+                display: inherit;
+                width: 100%;
+                height: 100%;
+              "
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"
+              ></path>
+            </svg>
+          </div>
+          <div class="notification_logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -31,107 +117,107 @@
               width="24"
               focusable="false"
               aria-hidden="true"
+              style="
+                pointer-events: none;
+                display: inherit;
+                width: 100%;
+                height: 100%;
+              "
             >
               <path
                 clip-rule="evenodd"
-                d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+                d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
                 fill-rule="evenodd"
               ></path>
             </svg>
-          </button>
+          </div>
+          <div class="channel_logo"></div>
         </div>
-        <div class="mic">
-          <svg
-            viewBox="-5 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-            fill="#ffffff"
-            stroke="#ffffff"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <title>microphone</title>
-              <desc>Created with Sketch Beta.</desc>
-              <defs></defs>
-              <g
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
+      </nav>
+      <main class="main">
+        <div class="tabs">
+          <div class="tab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M22.146 11.146a.5.5 0 01-.353.854H20v7.5a1.5 1.5 0 01-1.5 1.5H14v-8h-4v8H5.5A1.5 1.5 0 014 19.5V12H2.207a.5.5 0 01-.353-.854L12 1l10.146 10.146Z"
                 fill-rule="evenodd"
-                sketch:type="MSPage"
-              >
-                <g
-                  id="Icon-Set-Filled"
-                  sketch:type="MSLayerGroup"
-                  transform="translate(-107.000000, -309.000000)"
-                  fill="#fff"
-                >
-                  <path
-                    d="M118,333 C121.866,333 125,329.866 125,326 L125,316 C125,312.134 121.866,309 118,309 C114.134,309 111,312.134 111,316 L111,326 C111,329.866 114.134,333 118,333 L118,333 Z M129,328 L127,328 C126.089,332.007 122.282,335 118,335 C113.718,335 109.911,332.007 109,328 L107,328 C107.883,332.799 112.063,336.51 117,336.955 L117,339 L116,339 C115.448,339 115,339.448 115,340 C115,340.553 115.448,341 116,341 L120,341 C120.552,341 121,340.553 121,340 C121,339.448 120.552,339 120,339 L119,339 L119,336.955 C123.937,336.51 128.117,332.799 129,328 L129,328 Z"
-                    id="microphone"
-                    sketch:type="MSShapeGroup"
-                  ></path>
-                </g>
-              </g>
-            </g>
-          </svg>
-        </div>
-      </div>
+              ></path>
+            </svg>
+            <div class="tab_text">Home</div>
+          </div>
+          <div class="tab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                clip-rule="evenodd"
+                d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
 
-      <div class="right">
-        <div class="upload_video_logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            style="
-              pointer-events: none;
-              display: inherit;
-              width: 100%;
-              height: 100%;
-            "
-            viewBox="0 0 24 24"
-            width="24"
-            focusable="false"
-            aria-hidden="true"
-          >
-            <path
-              d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"
-            ></path>
-          </svg>
+            <div class="tab_text">Shorts</div>
+          </div>
+          <div class="tab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M4 4.5A1.5 1.5 0 015.5 3h13A1.5 1.5 0 0120 4.5H4Zm16.5 3h-17v11h17v-11ZM3.5 6A1.5 1.5 0 002 7.5v11A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 6h-17Zm7.257 4.454a.5.5 0 00-.757.43v4.233a.5.5 0 00.757.429L15 13l-4.243-2.546Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+
+            <div class="tab_text">Subscription</div>
+          </div>
+          <div class="tab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M12 20.5c1.894 0 3.643-.62 5.055-1.666a5.5 5.5 0 00-10.064-.105.755.755 0 01-.054.099A8.462 8.462 0 0012 20.5Zm4.079-5.189a7 7 0 012.142 2.48 8.5 8.5 0 10-12.443 0 7 7 0 0110.3-2.48ZM12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm2-12.5a2 2 0 11-4 0 2 2 0 014 0Zm1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0Z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+
+            <div class="tab_text">You</div>
+          </div>
         </div>
-        <div class="notification_logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-            focusable="false"
-            aria-hidden="true"
-            style="
-              pointer-events: none;
-              display: inherit;
-              width: 100%;
-              height: 100%;
-            "
-          >
-            <path
-              clip-rule="evenodd"
-              d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
-              fill-rule="evenodd"
-            ></path>
-          </svg>
-        </div>
-        <div class="channel_logo"></div>
-      </div>
-    </nav>
+        <div class="right"></div>
+      </main>
+    </div>
   </body>
 </html>
+<!-- Home -->
+<!-- Shorts -->
+<!-- Subscriptions -->
+<!-- You -->
