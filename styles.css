@@ -158,3 +158,59 @@
 .tabs .tab .tab_text {
   margin-top: 6px;
 }
+
+/* Lesson 3 */
+
+.main .content {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  height: 100%;
+  width: 100%;
+}
+.main .content .categories {
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 72px);
+  overflow-x: auto;
+}
+.main .content .categories .category {
+  background-color: #272727;
+  color: white;
+  padding: 0 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 12px;
+  margin-left: 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  min-width: 12px;
+  text-wrap: nowrap;
+}
+.main .content .categories .category.active,
+.main .content .categories .category.active:hover {
+  background-color: #f1f1f1;
+  color: #0f0f0f;
+}
+.main .content .categories .category:hover {
+  background-color: #ffffff33;
+}
+
+.main .content .categories .next_category {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 55%;
+}
+.main .content .categories .next_category:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main .content .categories .next_category svg {
+  width: 24px;
+  height: 24px;
+}
