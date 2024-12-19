@@ -4,7 +4,20 @@
   box-sizing: border-box;
   font-family: Roboto, Arial, sans-serif;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 .navbar {
   background-color: #0f0f0f;
   height: 56px;
@@ -51,6 +64,8 @@
   fill: white;
   cursor: pointer;
   margin: 0 15px;
+  min-width: 24px;
+  min-height: 24px;
 }
 
 .channel_logo {
@@ -174,10 +189,12 @@
 .main .content .categories {
   display: flex;
   align-items: center;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding-right: 10px;
+  width: 100%;
 }
+
 .main .content .categories .category {
   background-color: #272727;
   color: white;
@@ -191,7 +208,6 @@
   margin-left: 0px;
   cursor: pointer;
   border-radius: 8px;
-  min-width: 12px;
   text-wrap: nowrap;
 }
 .main .content .categories .category.active,
@@ -204,9 +220,13 @@
 }
 
 .main .content .categories .next_category {
-  position: relative;
+  position: absolute;
+  right: 0px;
+  transform: translate(380%, 0%);
+  top: 0;
+  z-index: 2;
   border-radius: 50%;
-  width: 30px;
+  min-width: 30px;
   height: 28px;
   display: flex;
   align-items: center;
@@ -217,9 +237,10 @@
 .main .content .categories .shadow {
   position: absolute;
   top: 0;
-  right: 25px;
+  transform: translate(90%, 0%);
+  right: 0px;
   bottom: 0;
-  width: 80px;
+  width: 150px;
   height: 100%;
   background: linear-gradient(to left, #000 20%, rgba(0, 0, 0, 0) 80%);
   z-index: 1;
@@ -240,12 +261,11 @@
   display: grid;
   gap: 20px;
   width: calc(100% - 67px);
-  margin: auto;
-  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .container .main .content .videos .video {
-  height: 326px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -256,10 +276,11 @@
 }
 .container .main .content .videos .video .preview_container .preview {
   width: 100%;
-  height: 221px;
+  height: 220px;
   background-image: url("/assets/images/Урок\ 9.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
 }
 .container .main .content .videos .video .preview_container .timer {
@@ -321,4 +342,12 @@
   .info_container
   .video_info {
   color: #aaaaaa;
+}
+@media (max-width: 770px) {
+  .navbar {
+    overflow-x: auto;
+  }
+  .navbar .center .search_container {
+    width: 240px;
+  }
 }
