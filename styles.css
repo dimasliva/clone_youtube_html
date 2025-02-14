@@ -69,7 +69,7 @@
 }
 
 .channel_logo {
-  background-image: url("assets/images/avatar.jpg");
+  background-image: url("./assets/images/avatar.jpg");
   width: 32px;
   height: 32px;
   border-radius: 55%;
@@ -299,7 +299,7 @@
   color: white;
 }
 .container .main .content .videos .video .desc_container .avatar {
-  background-image: url("/assets/images/avatar.jpg");
+  background-image: url("./assets/images/avatar.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
